@@ -57,7 +57,7 @@ class LoginController extends Controller
                 'email' => $request->email,
                 'password' => hash::make($request->password),
                 'is_admin' => $request->is_admin,
-                'user_type' => $request->user_type,
+                'user_type' => 'User',
             ];
             $user = User::where('email',$request->email)->first();
             if($user){

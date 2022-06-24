@@ -1100,9 +1100,7 @@
         </a>
     </div>
     <!-- Logo -->
-    <a href="index.html" class="logo">
-        <img width="100" src="https://vetra.laborasyon.com/assets/images/logo.svg" alt="logo">
-    </a>
+
     <!-- ./ Logo -->
     <div class="page-title">Overview</div>
     <form class="search-form">

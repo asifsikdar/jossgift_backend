@@ -34,4 +34,5 @@ Route::get('/logout',[LoginController::class,'logout'])->name('admin.logout');
 
 Route::prefix('Admin/user')->group(function(){
  Route::get('/view',[UserController::class,'UserView'])->name('user.view');
+ Route::post('/user_type/{id}',[UserController::class,'UserType'])->name('user.usertype.update');
 });

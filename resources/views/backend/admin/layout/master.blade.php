@@ -25,6 +25,7 @@
 
     <!-- Main style file -->
     <link rel="stylesheet" href="{{asset('fontend/main/dist/css/app.min.css')}}" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -70,7 +71,20 @@
 
 <!-- Main Javascript file -->
 <script src="{{asset('fontend/main/dist/js/app.min.js')}}"></script>
-</body>
 
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+      
+      var table = $('.data-table').DataTable({
+          processing: false,
+          serverSide: false,
+      });
+      
+    });
+  </script>
 <!-- Mirrored from vetra.laborasyon.com/demos/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 17:29:44 GMT -->
 </html>

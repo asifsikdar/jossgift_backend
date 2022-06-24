@@ -48,20 +48,18 @@
                                 <form action="{{route('post.registration')}}" method="post" class="mb-5">
                                     @csrf
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="name" placeholder="Enter fullname" autofocus
-                                               required>
+                                        <input type="text" class="form-control" name="name" placeholder="Enter fullname" autofocus>
+                                    </div>
+                                    <input type="hidden" name="is_admin" value="0">
+                                    <input type="hidden" name="user_type">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" name="email" placeholder="Enter email">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" name="email" placeholder="Enter email"
-                                               required>
+                                        <input type="password" class="form-control" name="password" placeholder="Enter password">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" name="password" placeholder="Enter password"
-                                               required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="password" class="form-control" name="confirm_password" placeholder="Re-enter password"
-                                               required>
+                                        <input type="password" class="form-control" name="confirm_password" placeholder="Re-enter password">
                                     </div>
                                     <input type="hidden" name="is_admin" value="0">
                                     <input type="hidden" name="user_type" value="1">
